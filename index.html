@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - 109403021</title>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
-<body>
-    <p>test test test</p>
+<body onload="alert('歡迎光臨!!!')"><!--特效1.背景顏色上了漸層-->
+    <center>
+        <h1>傅珩洵</h1>
+    </center>
+    <div id="div1"><!--特效2.此區塊滑鼠經過會變色-->
+        <p>歡迎來到傅珩洵的個人主頁</p>
+        <button type="button" onclick="myFunction()">顯示系級學號</button>
+        <p  id = "click">學號:????????? 系級:????</p>
+    </div>
+    <hr color="red" size="3">
+    <br>
+    <div id="div2"><!--特效3.改變此區塊背景及字體顏色且附帶淡化效果-->
+        <b>學歷:</b>
+        <ul>
+            <li>竹東國小</li>
+            <li>竹東國中</li>   
+            <li>新竹高中</li>
+            <li>中央大學</li>
+        </ul>
+    </div>
+    <div id="div3">
+        <table border="3"><!--特效4.標格邊框採用圓潤修飾-->
+            <thead>
+                <tr>
+                    <th colspan="2">社群軟體</th>
+                </tr>
+                <tr>
+                    <th>FB</th>
+                    <th>IG</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr><!--特效5.滑鼠經過圖片會逐漸放大-->
+                    <td><img width = "50" height="50" src="fb.png" alt="fb"></td>
+                    <td><img width = "50" height="50" src="ig.png" alt="ig"></td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="https://www.facebook.com/harrison.fuh">連結</a></td>
+                    <td><a target="_blank" href="https://www.instagram.com/harrison_hchm21ha/">連結</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("click").innerHTML = "學號:109403021 系級:資管二A";
+        }
+    </script>
 </body>
 </html>
