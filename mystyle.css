@@ -1,0 +1,28 @@
+body {
+    background: -webkit-linear-gradient(-8deg,white,pink)
+}
+#div1 {
+    background-color: rgb(111, 185, 161,0.25);
+}
+
+#div1:hover{
+    background-color: rgb(234, 164, 129,0.25);
+}
+
+#div2 {
+    background-color: rgb(230, 237, 195,0.5);
+    color:blueviolet;
+    opacity: 0.75;
+}
+
+img:hover {
+    width:150px;
+    height: 150px;
+    transition: 2s;
+}
+
+
+table {
+    border-radius: 15px;
+}
+
